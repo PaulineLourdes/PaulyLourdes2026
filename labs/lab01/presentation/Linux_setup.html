@@ -1,0 +1,129 @@
+<h1 id="информация">Информация</h1>
+<h2 id="докладчик">Докладчик</h2>
+<div class="columns" data-align="center">
+<div class="column" style="width:70%;">
+<ul>
+<li>Камбунду Паулине</li>
+<li>Физико-Математический факультет</li>
+<li>Российский университет дружбы народов</li>
+<li><a href="mailto:1032239159@pfur.ru">1032239159@rudn.ru</a></li>
+<li></li>
+</ul>
+</div>
+</div>
+<h1 id="цель-работы">Цель работы</h1>
+<p>Приобретение практических навыков установки операционной системы на
+виртуальную машину.</p>
+<h2 id="задачи">Задачи</h2>
+<ol type="1">
+<li>Установить и настроить Rocky Linux.</li>
+<li>Найти следующую информацию:
+<ol type="1">
+<li>Версия Linux</li>
+<li>Частота процессора</li>
+<li>Модель процессора</li>
+<li>Объем доступной оперативной памяти</li>
+<li>Тип обнаруженного гипервизора</li>
+<li>Тип файловой системы корневого раздела</li>
+<li>Последовательность монтирования файловых систем</li>
+</ol></li>
+</ol>
+<h1 id="выполнение-работы">Выполнение работы</h1>
+<p>В приложнии VirtualBox создаю новую виртуальную машину. Указываю имя
+виртуальной машины и добавляю оптический диск.</p>
+<figure id="fig:001">
+<img src="image/1.jpg" style="width:70.0%" alt="Оптический диск" />
+<figcaption aria-hidden="true">Оптический диск</figcaption>
+</figure>
+<h2 id="настроики">Настроики</h2>
+<p>Указываю обьем памяти и создаю виртуальнный жетский диск.</p>
+<figure id="fig:002">
+<img src="image/2.jpg" style="width:70.0%"
+alt="Объем оперативнной памяти" />
+<figcaption aria-hidden="true">Объем оперативнной памяти</figcaption>
+</figure>
+<h2 id="настроики-1">Настроики</h2>
+<figure id="fig:003">
+<img src="image/3.jpg" style="width:70.0%" alt="Жетский диск" />
+<figcaption aria-hidden="true">Жетский диск</figcaption>
+</figure>
+<h2 id="настроики-2">Настроики</h2>
+<p>Соглашаюсь с поставленными настройками.</p>
+<figure id="fig:004">
+<img src="image/4.jpg" style="width:70.0%" alt="Итог" />
+<figcaption aria-hidden="true">Итог</figcaption>
+</figure>
+<h2 id="настроики-3">Настроики</h2>
+<p>Проверяю подключения диска в носителях образ.</p>
+<figure id="fig:005">
+<img src="image/5.jpg" style="width:70.0%" alt="Носители" />
+<figcaption aria-hidden="true">Носители</figcaption>
+</figure>
+<h2 id="настроики-4">Настроики</h2>
+<p>Выбираю место установки, отключаю kdump, создаю пользователя
+(администратор) и устанавливаю пароль для администратора.</p>
+<figure id="fig:008">
+<img src="image/80.jpg" style="width:70.0%" alt="Окно настроек" />
+<figcaption aria-hidden="true">Окно настроек</figcaption>
+</figure>
+<h2 id="настроики-5">Настроики</h2>
+<figure id="fig:0011">
+<img src="image/11.jpg" style="width:70.0%" alt="Отключение kdump" />
+<figcaption aria-hidden="true">Отключение kdump</figcaption>
+</figure>
+<h2 id="настроики-6">Настроики</h2>
+<figure id="fig:009">
+<img src="image/9.jpg" style="width:70.0%"
+alt="Создание пользователя" />
+<figcaption aria-hidden="true">Создание пользователя</figcaption>
+</figure>
+<h2 id="настроики-7">Настроики</h2>
+<figure id="fig:0010">
+<img src="image/10.jpg" style="width:70.0%" alt="Выбор окружения" />
+<figcaption aria-hidden="true">Выбор окружения</figcaption>
+</figure>
+<h2 id="установка">Установка</h2>
+<p>Затем устанавливаю систему.</p>
+<figure id="fig:0013">
+<img src="image/13.jpg" style="width:70.0%" alt="Установка" />
+<figcaption aria-hidden="true">Установка</figcaption>
+</figure>
+<h2 id="установка-1">Установка</h2>
+<p>После завершения установки образ диска пропадет из носителей.</p>
+<figure id="fig:0014">
+<img src="image/15.jpg" style="width:70.0%" alt="Проверка носителей" />
+<figcaption aria-hidden="true">Проверка носителей</figcaption>
+</figure>
+<h2 id="установка-2">Установка</h2>
+<p>При запуске виртуальной машины появляется окно выбора
+пользователя.</p>
+<figure id="fig:0015">
+<img src="image/14.jpg" style="width:70.0%"
+alt="Окно выбора пользователя" />
+<figcaption aria-hidden="true">Окно выбора пользователя</figcaption>
+</figure>
+<h2 id="информация-о-системе">Информация о системе</h2>
+<p>Запускаю в терминале: dmesg | grep -i “Linux version”, чтобы получить
+информацию о ядра.</p>
+<figure id="fig:0017">
+<img src="image/17.jpg" style="width:70.0%" alt="Версия ядра Linux" />
+<figcaption aria-hidden="true">Версия ядра Linux</figcaption>
+</figure>
+<h2 id="информация-о-системе-1">Информация о системе</h2>
+<p>dmesg | grep -i “detected”, чтобы получить информацию о
+процессоре.</p>
+<figure id="fig:0018">
+<img src="image/18.jpg" style="width:70.0%" alt="Частота процессора" />
+<figcaption aria-hidden="true">Частота процессора</figcaption>
+</figure>
+<h2 id="информация-о-системе-2">Информация о системе</h2>
+<p>dmesg | grep -i “CPU”, чтобы получить информацию о модели
+процессора.</p>
+<figure id="fig:0019">
+<img src="image/19.jpg" style="width:70.0%" alt="Модель процессора" />
+<figcaption aria-hidden="true">Модель процессора</figcaption>
+</figure>
+<h1 id="выводы">Выводы</h1>
+<p>Я приобрела практические навыки установки операционной системы на
+виртуальную машину, настройки минимально необходимых для дальнейшей
+работы сервисов.</p>
